@@ -7,15 +7,38 @@
     <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
-    <div class="data-hora">
-        <p id="dia-semana">Segunda feira</p>
-        <p id="dia-mes-ano">28/08/2024</p>
-        <p id="hora-min-sec">16:00:34</p>
+    <div class="date-time">
+        <p id="day-week">Segunda feira</p>
+        <p id="day-month-year">28/08/2024</p>
+        <p id="hour-min-sec">16:00:34</p>
     </div>
     <div class="buttons">
-        <button>Registrar ponto</button>
-        <button>Historico de ponto</button>
+        <button id="clock-in">Registrar ponto</button>
+        <button id="clock-in-history">Historico de ponto</button>
     </div>
+    <dialog id="dialog-clock-in">
+        <p id="dialog-date">
+            Data
+        </p>
+        <p id="dialog-time">
+            Hora
+        </p>
+        <button id="close">
+            X
+        </button>
+        <button id="start">
+            Inicio
+        </button>
+        <button id="lunch">
+            Almoco
+        </button>
+        <button id="return-from-lunch">
+            VoltaAlmoco
+        </button>
+        <button id="end">
+            Saida
+        </button>
+    </dialog>
     <script src="js/index.js"></script>
 </body>
 </html>
