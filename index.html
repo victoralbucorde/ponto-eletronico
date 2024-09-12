@@ -23,21 +23,16 @@
         <p id="dialog-time">
             Hora
         </p>
-        <button id="close">
+        <button id="dialog-close">
             X
         </button>
-        <button id="start">
-            Inicio
-        </button>
-        <button id="lunch">
-            Almoco
-        </button>
-        <button id="return-from-lunch">
-            VoltaAlmoco
-        </button>
-        <button id="end">
-            Saida
-        </button>
+        <select name="select-clockin-types" id="select-clockin-types">
+            <option value="shift-begin">Entrada</option>
+            <option value="lunch">Intervalo</option>
+            <option value="return-from-lunch">Volta Intervalo</option>
+            <option value="shift-ends">Saida</option>
+        </select>
+        <button id="dialog-confirm-btn">Confirmar</button>
     </dialog>
     <script src="js/index.js"></script>
 </body>
