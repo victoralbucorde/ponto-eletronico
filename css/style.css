@@ -1,5 +1,14 @@
-.date-time{
+.date-time p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
     text-align: center;
+    color: #E0E1DD;
+    font-size: 2.5rem;
+}
+
+#hour-min-sec{
+    font-size: 5rem;
+    margin-bottom: auto;
 }
 
 #dialog-close{
@@ -8,8 +17,27 @@
     right: 0%;
 }
 
+body{
+    background-color: #1B263B;
+}
+
 .buttons{
     text-align: center;
     position: relative;
     flex-direction: column;
+}
+
+#clock-in{
+    padding: 15px;
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    font-family: "Artemis";
+    font-size: 2rem;
+}
+#clock-in-history{
+    padding: 15px;
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    font-family: "Artemis";
+    font-size: 2rem;
 }
