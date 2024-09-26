@@ -6,7 +6,16 @@
     font-size: 2.5rem;
 }
 
+#day-week{
+    margin-bottom: 0%;
+}
+
+#day-month-year{
+    margin-top: 2%;
+}
+
 #hour-min-sec{
+    margin-top: 3%;
     font-size: 5rem;
     margin-bottom: auto;
 }
@@ -34,10 +43,45 @@ body{
     font-family: "Artemis";
     font-size: 2rem;
 }
+
 #clock-in-history{
     padding: 15px;
     background-color: #0D1B2A;
     color: #E0E1DD;
     font-family: "Artemis";
     font-size: 2rem;
+}
+
+#dialog-clock-in{
+    border: 0;
+    background-color: #415A77;
+    width: 25%;
+    height: 25%;
+}
+
+#dialog-date{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: #E0E1DD;
+    font-size: 1.5rem;
+}
+
+#dialog-time{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: #E0E1DD;
+    font-size: 1.5rem;
+}
+
+#select-clockin-types{
+    font-size: 2rem;
+    margin-top: 10%;
+    background-color: #778DA9;
+    color: #E0E1DD;
+}
+
+#dialog-confirm-btn{
+    font-size: 2rem;
+    background-color: #778DA9;
+    color: #E0E1DD;
 }

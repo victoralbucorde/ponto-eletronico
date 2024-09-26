@@ -17,6 +17,7 @@ const selectClockinType = document.getElementById("select-clockin-types");
 
 diaMesAno.textContent = completeDate();
 diaSemana.textContent = dayWeek();
+updateTime();
 setInterval(updateTime,1000);
 clockInButton.addEventListener("click",()=>{
     let lastClockInType = localStorage.getItem("lastClockInType");
@@ -43,8 +44,10 @@ dialogConfirmButton.addEventListener("click",()=>{
     dialogClockIn.close();
 })
 
-dialogTime.textContent = "Data: " + completeDate();
-setInterval(()=>{dialogDate.textContent="Hora: " + completeTime();},1000);
+
+dialogDate.textContent = "Data: " + completeDate();
+dialogTime.textContent="Hora: " + completeTime();
+setInterval(()=>{dialogTime.textContent="Hora: " + completeTime();},1000);
 dialogCloseButton.addEventListener("click",()=>{dialogClockIn.close();});
 
 //Functions
