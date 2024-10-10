@@ -39,8 +39,8 @@ dialogConfirmButton.addEventListener("click",()=>{
         "id": 1,
     }
 
-    localStorage.setItem("test",JSON.stringify(clockIn));
-    localStorage.setItem("lastClockInType",selectClockinType.value);
+    saveReportLocalStorage(clockIn)
+    localStorage.setItem("lastClockInType", document.getElementById("select-clockin-types").value)
     dialogClockIn.close();
 })
 
@@ -77,4 +77,24 @@ function addZero(i){
 
 function getLastId(){
     return localStorage.getItem(String(localStorage.length));
+}
+
+function restoreClockInLocalStorage() {
+    let allClockIn = localStorage.getItem("report");
+
+    if(!allClockIn) {
+        return [];
+    }
+
+    return JSON.parse(allClockIn);
+}
+
+function saveReportLocalStorage(clockIn) {
+    let allClockIn = restoreClockInLocalStorage();
+    
+    allClockIn.push(clockIn);
+    // 1 - recuperar os registros anteriores
+    // 2 - adicionar o novo registro (ponto) no final do array de registros
+
+    localStorage.setItem("report", JSON.stringify(allClockIn));
 }
